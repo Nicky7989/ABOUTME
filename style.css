@@ -1,4 +1,4 @@
-/* Añadir media query para pantallas pequeñas */
+
 @media (max-width: 768px) {
     body {
         display: flex;
@@ -12,16 +12,16 @@
         text-align: center;
     }
     .about-image {
-        order: -1; /* La imagen va primero */
-        width: 100%; /* Ajusta el tamaño */
+        order: -1; 
+        width: 100%; 
         max-width: 400px;
     }
     .about-text {
-        order: 0; /* Luego el texto */
+        order: 0; 
         padding: 15px;
     }
     aside {
-        order: 1; /* Luego el aside */
+        order: 1;
         width: 100%;
         text-align: center;
     }
