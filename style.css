@@ -26,12 +26,22 @@
         margin-bottom: 20px;
         padding: 20px;
     }
-        .container {
-    max-width: 100%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-}
+    .container {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+    .picture img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid rgba(38, 53, 79, 0.5);
+        margin-left: 20px;
+        margin-right: 50px;
+        margin-top: 80px;
+    }
     .maininfo{
         display: grid;
         grid-template-rows: 50% 50%;
