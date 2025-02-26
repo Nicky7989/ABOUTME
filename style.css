@@ -1,21 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
-    }
-    .aside {
+    .main{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
+        height: 100%;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        margin-top: 20px
     }
-    .text {
-        text-align: center;
+    .aside{
+        display: grid;
+        background-color: rgba(119, 152, 170, 0.5);
+        grid-template-rows: (2, 1fr);
+        width: 100%;
+        height: fit-content;
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
     }
     .maininfo{
         display: grid;
-        grid-template-rows: 50% 50%;
         justify-content: space-between;
         flex-wrap: wrap;
-        flex-direction: column;
         color: white;
         font-family: 'Barlow', sans-serif;
     }
@@ -30,44 +44,31 @@
         text-align: center;
         flex-wrap: wrap;
     }
-    .maininfo h1{
-        padding-bottom: 20px !important;
+    .project{
+        display: grid;
+        grid-template-rows: repeat(4,4fr);
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 10px;
+        background:rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        margin-top: 20px;
     }
-    .aboutme{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 50px;
-        flex-direction: column;
+    .project ul{
+        text-align: center;
+        list-style: none;
+        font-size: 11px;
     }
-    .text{
-        padding: 70px;
-        font-size: large;
+    .project a {
+        text-decoration: none;
+        font-weight: normal;
+        font-style: normal;
+        color: rgba(38, 53, 79, 1);
     }
-    .text h1{
-        padding-bottom: 30px;
-        color: rgba(38, 53, 79, 0.6);
-    }
-    .text p{
-        padding-bottom: 20px;
-        color: white;
-    }
-    .picture img{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid rgba(38, 53, 79, 0.5);
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 80px;
-    }
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .hobbies{
+        display: grid;
+        grid-template-columns: repeat(3,3fr);
+        justify-content: space-between;}
 }
 .body{
     background-image: url('./BACKGROUND2.webp');
@@ -152,7 +153,7 @@
 /*Seulemente ABOUT ME*/
 .aboutme{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 30%;
     flex-wrap: wrap;
     margin-left: 50px;
 }
@@ -175,7 +176,7 @@
     object-fit: cover;
     border: 5px solid rgba(38, 53, 79, 0.5);
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
     margin-top: 80px;
 }
 /*Info principal*/
@@ -321,3 +322,4 @@
     font-size: 1em;
     font-style: normal;
 }
+
