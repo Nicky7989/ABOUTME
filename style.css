@@ -4,96 +4,127 @@
     box-sizing: border-box;
 }
 @media (max-width: 768px) {
-    .main{
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        color: white;
-        font-family: 'Barlow', sans-serif;
-        margin-top: 20px
-    }
-    .aside{
-        display: grid;
-        background-color: rgba(119, 152, 170, 0.5);
-        grid-template-rows: (2, 1fr);
-        width: 100%;
-        height: fit-content;
-        border-radius: 30px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
-    .container {
-        max-width: 100%;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        word-break: break-word;
-    }
-    .picture img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid rgba(38, 53, 79, 0.5);
-        margin-left: 20px;
-        margin-right: 50px;
-        margin-top: 80px;
-    }
-    .maininfo{
-        display: grid;
-        grid-template-rows: 50% 50%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: white;
-        font-family: 'Barlow', sans-serif;
-    }
-    .maininfo div{
-        background: linear-gradient(to right, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
-        height: fit-content;
-        border-radius: 30px;
-        margin-left: 50px;
-        margin-right: 20px;
-        padding: 50px;
-        margin-bottom: 30px;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-    .aboutme{
-        display: grid;
-        flex-wrap: wrap;
-        margin-left: 50px;
-    }
-    .project{
-        display: grid;
-        grid-template-columns: repeat(4,4fr);
-        justify-content: space-between;
-        text-decoration: none;
-        padding: 10px;
-        background:rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-    .project ul{
-        text-align: center;
-        list-style: none;
-        font-size: 11px;
-    }
-    .project a {
-        text-decoration: none;
-        font-weight: normal;
-        font-style: normal;
-        color: rgba(38, 53, 79, 1);
-    }
-    .project ul:last-child {
-        border-right: none;
-    }
-    .hobbies{
-        display: grid;
-        grid-template-columns: repeat(3,3fr);
-        justify-content: space-between;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    background-image: url('./BACKGROUND2.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    padding: 15px;
+}
+.title {
+    font-size: 2em;
+    font-weight: 800;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: linear-gradient(to left, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
+    border-radius: 30px;
+}
+.nav ul {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main content */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+}
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+}
+.text {
+    padding: 10px;
+}
+.text h1 {
+    font-size: 1.8em;
+    color: rgba(38, 53, 79, 0.8);
+}
+.picture img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(38, 53, 79, 0.5);
+}
+
+/* Aside */
+.aside {
+    background-color: rgba(119, 152, 170, 0.5);
+    width: 95%;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+}
+.aside .info {
+    list-style: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to left, rgba(119, 152, 170, 1), rgba(38, 53, 79, 1));
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* Form */
+.form {
+    background: linear-gradient(to right, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form input, .form select, .form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.form button {
+    background: rgba(38, 53, 79, 0.8);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form button:hover {
+    background: rgba(119, 152, 170, 0.8);
+}
 }
 .body{
     background-image: url('./BACKGROUND2.webp');
