@@ -26,6 +26,12 @@
         margin-bottom: 20px;
         padding: 20px;
     }
+        .container {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
     .maininfo{
         display: grid;
         grid-template-rows: 50% 50%;
