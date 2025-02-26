@@ -5,6 +5,11 @@
         flex-direction: column;
         align-items: center;
     }
+    .maininfo div {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
     .about-section {
         display: flex;
         flex-direction: column;
@@ -12,12 +17,12 @@
         text-align: center;
     }
     .about-image {
-        order: -1; 
+        order: 0; 
         width: 100%; 
         max-width: 400px;
     }
     .about-text {
-        order: 0; 
+        order: -1; 
         padding: 15px;
     }
     aside {
