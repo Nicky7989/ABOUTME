@@ -10,13 +10,18 @@
         margin-right: auto;
         text-align: center;
     }
+    .container {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
     .about-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .about-image {
+    .picture {
         order: 0; 
         width: 80%; 
         max-width: 100px;
