@@ -21,9 +21,9 @@
         align-items: center;
         text-align: center;
     }
-    .picture {
+    .about-image {
         order: 0; 
-        width: 80%; 
+        width: 50%; 
         max-width: 100px;
     }
     .about-text {
