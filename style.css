@@ -10,11 +10,35 @@
     .text {
         text-align: center;
     }
+    .maininfo{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+    }
+    .maininfo div{
+        background: linear-gradient(to right, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
+        height: fit-content;
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-right: 20px;
+        padding: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .maininfo h1{
+        padding-bottom: 20px !important;
+    }
     .aboutme{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         margin-left: 50px;
+        flex-direction: column;
     }
     .text{
         padding: 70px;
@@ -297,4 +321,3 @@
     font-size: 1em;
     font-style: normal;
 }
-
