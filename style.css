@@ -1,0 +1,265 @@
+@media screen and (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+
+    input, select, button {
+        width: 100%; 
+    }
+    .header {
+        text-align: center;
+    }
+    .nav ul {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url('./BACKGROUND2.webp');
+}
+/*Header et menu do navegacion*/
+.header{
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    padding: 30px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    font-style: normal;
+    color: rgba(38, 53, 79, 0.8);
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    grid-template-rows: repeat(1, 2fr);
+    justify-content: space-between;
+    background: linear-gradient(to left, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul{
+    text-align: center;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*Corpus en general*/
+.main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 20px
+}
+/*Info complementaria*/
+.aside{
+    display: grid;
+    background-color: rgba(119, 152, 170, 0.5);
+    grid-template-rows: (2, 1fr);
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.info{
+ padding: 20px;
+}
+.aside ul{
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    padding-top: 5px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+/*Seulemente ABOUT ME*/
+.aboutme{
+    display: flex;
+    margin-left: 50px;
+}
+.text{
+    padding: 70px;
+    font-size: large;
+}
+.text h1{
+    padding-bottom: 30px;
+    color: rgba(38, 53, 79, 0.6);
+}
+.text p{
+    padding-bottom: 20px;
+    color: white;
+}
+.picture img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(38, 53, 79, 0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+/*Info principal*/
+.maininfo{
+    display: flex;
+    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+.maininfo div{
+    background: linear-gradient(to right, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
+    height: fit-content;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.maininfo h1{
+    padding-bottom: 20px !important;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px;
+    background:rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.project ul{
+    text-align: center;
+    list-style: none;
+    font-size: 11px;
+}
+.project a {
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    color: rgba(38, 53, 79, 1);
+}
+.project ul:last-child {
+    border-right: none;
+}
+.hobbies{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    justify-content: space-between;
+}
+.hobbies ul{
+    text-align: center;
+    list-style: none;
+    border-right: 2px solid rgba(255, 255, 255, 1);
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.hobbies ul:last-child {
+    border-right: none;
+}
+.pictures{
+    background: transparent !important;
+    box-shadow: none !important;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+}
+.pictures img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/*questionarium*/
+.form {
+    background: linear-gradient(to right, rgba(119, 152, 170, 0.3), rgba(38, 53, 79, 0.8));
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.background{
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 20px
+}
+.form button {
+    background: rgba(38, 53, 79, 0.8); /* Color azul oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+.form button:hover {
+    background: rgba(119, 152, 170, 0.8); /* Un tono más claro al pasar el mouse */
+}
+.form select {
+    width: 50%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: block;
+    margin: 10px auto;
+}
+/*Wassermark*/
+.footer{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, rgba(119, 152, 170, 1), rgba(38, 53, 79, 1));
+    color: white;
+    padding: 50px;
+}
+.footer div{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    font-style: normal;
+}

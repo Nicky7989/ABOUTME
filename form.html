@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="title">ALL YOU NEED TO KNOW...</h1>
+        <Nav class="nav">
+            <ul>
+                <li><a href="./index.html"><b>ABOUT ME</b></a></li>
+            </ul>
+            <ul>
+                <li><a href="./projects.html"><b>PROJECTS</b></a></li>
+            </ul>
+            <ul>
+                <li><a href="./hobbies.html"><b>HOBBIES</b></a></li>
+            </ul>
+            <ul>
+                <li><a href="./form.html"><b>LEAVE YOUR INFO</b></a></li>
+            </ul>
+        </Nav>
+    </header>
+    <main class="background">
+        <div>
+            <form id="contactForm" action="#" method="post" onsubmit="showThankYouMessage(event)" class="form">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="phone">PHONE</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="role">Are you a company or an independent worker?</label>
+                <select id="role" name="role" onchange="toggleCompanyField()" required>
+                    <option value="">Select an option</option>
+                    <option value="company">COMPANY</option>
+                    <option value="independent">INDEPENDENT</option>
+                </select>
+            
+                <div id="companyField" style="display: none;">
+                    <label for="company">COMPANY NAME</label>
+                    <input type="text" id="company" name="company">
+                </div>
+            
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div id="thankYouMessage" style="display: none; margin-top: 20px; font-size: 18px; font-weight: bold;">
+                Thank you! I'll contact you soon.
+            </div>
+            
+            <script>
+                function toggleCompanyField() {
+                    var role = document.getElementById("role").value;
+                    var companyField = document.getElementById("companyField");
+            
+                    if (role === "company") {
+                        companyField.style.display = "block";
+                    } else {
+                        companyField.style.display = "none";
+                    }
+                }
+            </script>                               
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <h3> Portafolio de Ingeniería Web</h3>
+            &copy; by Nicolas Cuadrado
+        </div>
+    </main>
+    </footer>
+    
+</body>
+</html>
