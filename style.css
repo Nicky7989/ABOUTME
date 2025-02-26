@@ -1,18 +1,29 @@
-@media screen and (max-width: 768px) {
-    .form {
-        width: 90%;
+/* Añadir media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    input, select, button {
-        width: 100%; 
-    }
-    .header {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
-    .nav ul {
-        display: block;
+    .about-image {
+        order: -1; /* La imagen va primero */
+        width: 100%; /* Ajusta el tamaño */
+        max-width: 400px;
+    }
+    .about-text {
+        order: 0; /* Luego el texto */
+        padding: 15px;
+    }
+    aside {
+        order: 1; /* Luego el aside */
+        width: 100%;
         text-align: center;
-        padding: 10px 0;
     }
 }
 *{
@@ -94,6 +105,12 @@
     list-style: none;
     padding-bottom: 20px;
 }
+.container {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }  
 /*Seulemente ABOUT ME*/
 .aboutme{
     display: flex;
